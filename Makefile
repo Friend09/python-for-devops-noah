@@ -9,15 +9,15 @@ post-intall:
 
 format:
 	# format code
-	black *.py my-utils/*.py
+	black *.py mylib/*.py
 
 lint:
 	# lint code
-	pylint --disable=R,C *.py my-utils/*.py
+	pylint --disable=R,C *.py mylib/*.py
 
 test:
 	# test python files
-	python -m pytest -vv --cov=my-utils --cov=main test_*.py
+	python -m pytest -vv --cov=mylib --cov=main test_*.py
 
 build:
 	# build container
